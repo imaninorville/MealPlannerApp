@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" styleClass="parent" stylesheets="@Stylesheet.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FavoriteRecipesController">
+    <children>
+        <HBox layoutX="71.0" layoutY="14.0" prefHeight="77.0" prefWidth="799.0" styleClass="TopPane">
+            <children>
+                <Label text="FAVORITE RECIPES">
+                    <padding>
+                        <Insets left="15.0" top="15.0" />
+                    </padding>
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <AnchorPane layoutX="904.0" prefHeight="69.0" prefWidth="69.0" />
+        <TableView fx:id="favRec_table" layoutX="81.0" layoutY="127.0" prefHeight="410.0" prefWidth="850.0">
+            <columns>
+                <TableColumn fx:id="fav_col" prefWidth="534.0" />
+            <TableColumn fx:id="view_col" prefWidth="314.0" />
+            </columns>
+        </TableView>
+        <Label fx:id="label1" layoutX="87.0" layoutY="100.0" textFill="#5a80ff">
+            <font>
+                <Font size="16.0" />
+            </font></Label>
+    </children>
+</AnchorPane>

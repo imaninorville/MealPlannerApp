@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="588.0" prefWidth="844.0" styleClass="pane" stylesheets="@Stylesheet.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ViewRecipeController">
+   <children>
+      <TableView fx:id="ingr_table" layoutX="35.0" layoutY="219.0" prefHeight="346.0" prefWidth="395.0">
+        <columns>
+          <TableColumn fx:id="amount_col" prefWidth="57.0" />
+            <TableColumn fx:id="measure_col" prefWidth="117.0" />
+          <TableColumn fx:id="ingr_col" prefWidth="221.0" />
+        </columns>
+      </TableView>
+      <Text fx:id="des_text" layoutX="35.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="description" wrappingWidth="673.75146484375" />
+      <Text fx:id="rName_text" layoutX="35.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recipe Name">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="cookTime_text" layoutX="469.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cook time" />
+      <Label layoutX="42.0" layoutY="176.0" text="Ingredients">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Text fx:id="instr_text" layoutX="469.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="360.2060546875" />
+      <Label layoutX="469.0" layoutY="176.0" text="Instructions">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
